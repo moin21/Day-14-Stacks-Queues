@@ -19,6 +19,16 @@ public class QueueService {
 		}
 		currentNode.next = newNode;
 	}
+	/**
+	 * Method: dequeue the first added element from the queue 
+	 * 
+	 * @return - new head which is next to the previous head
+	 */
+	public Node dequeue() {
+		System.out.println("dequeued element is : " + head.data);
+		head = head.next;
+		return head;
+	}
 
 	/**
 	 * Method to Print list Here first we check if stack is empty and give a message

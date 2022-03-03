@@ -8,5 +8,7 @@ public class Main {
 		list.enqueu(30);
 		list.enqueu(70);
 		list.printList();
+		list.dequeue();
+		list.printList();
 	}
 }
