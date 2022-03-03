@@ -22,13 +22,38 @@ public class StackService {
 	}
 
 	/**
+	 * Method: popping the top element from the stack
+	 * 
+	 * @return - new head which is next to the previous head
+	 */
+	public Node pop() {
+		System.out.println("Popped element is : " + head.data);
+		head = head.next;
+		return head;
+	}
+
+	/**
+	 * Method to print top element of the stack
+	 * 
+	 * @return
+	 */
+	public void peak() {
+		if (head != null) {
+			System.out.println("Top of the stack is " + head.data);
+		} else {
+			System.out.println("No element left in the stack.");
+			return;
+		}
+	}
+
+	/**
 	 * Method to Print list Here first we check if stack is empty and give a message
 	 * to user, if not we print every current Node starting from head, while
 	 * changing to currentNode to next every time it prints one node.
 	 */
 	public void printList() {
 		if (head == null) {
-			System.out.println("Stack is empty");
+			System.out.println("Stack is empty.");
 			return;
 		}
 		Node currNode = head;

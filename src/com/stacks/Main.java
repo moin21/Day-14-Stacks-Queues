@@ -7,6 +7,13 @@ public class Main {
 		list.push(70);
 		list.push(30);
 		list.push(56);
+		list.peak();
+		list.pop();
+		list.peak();
+		list.pop();
+		list.peak();
+		list.pop();
+		list.peak();
 		list.printList();
 	}
 }
